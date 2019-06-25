@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+
+<html lang="fr-FR">
+
+<head>
+    <title>Calcul d'air</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="BERTON GNOLFI RIGAL">
+    <meta name="description" content="Page pour calculer les aires.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../Css/styles.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <header>
+        <picture>
+            <source media="(max-width: 576px)" srcset="../img/smallban.jpg">
+            <source srcset="../img/baniere.jpg" alt="Tableau a fond blanc remplis de gribouillages scientifiques">
+            <img src="img/baniere.jpg" alt="Tableau a fond blanc remplis de gribouillages scientifiques">
+        </picture>
+
+    </header>
+    <section id="blabla">
+        <article>
+
+            <h1>
+                <p> Vous êtes sur la page de calcul d'aire.</p> <br />
+                <h4><a class="my2Button" href="../index.html">Retour accueil</a></h4>
+            </h1>
+
+            <br />
+
+            <section id="thematique">
+                <h1> Veuillez selectionner la figure géométrique : </h1> <br /> <br />
+                <article id="fig1"><a href="#car">Carré</a></article alt="Carré">
+                <article id="fig2"><a href="#tri">Triangle</a></article alt="Triangle">
+                <article id="fig3"><a href="#cercl">Cercle</a></article alt="Cercle">
+            </section>
+            <section id="thematique">
+                <article id="fig4"><a href="#losa">Losange</a></article alt="Losange">
+                <article id="fig5"><a href="#rect">Triangle Rectangle</a></article alt="Triangle rectangle">
+              
+            </section>
+
+
+            <a id="car"></a>
+
+            <img class="trait" src="../img/trait.jpg" />
+            <h1>
+                <p>Vous pouvez calculer l'aire de votre rectangle juste ici !</p> <br />
+            </h1>
+
+
+            <section id="zonecal">
+                <img src="../img/rectangle.jpg" width="280" height="280" alt="Carré" />
+
+                <h3>
+                    <p><label for="ra1">Longueur d'une arête (en cm) : </label><input type="number" name="ra1" id="ra1" size="10" ></p>
+                    <p><label for="ra2">Arête adjacente (en cm) : </label><input type="number" name="ra2" id="ra2" size="10" ></p>
+                    <a class="myButton" onclick="calc_aire_rect()" >Calculez !</a>
+
+                    <p id="ra">
+
+                    </p><a href="#" class="to-top">Haut de page</a>
+                </h3>
+            </section>
+
+            <a id="tri"></a>
+            <img class="trait" src="../img/trait.jpg" />
+
+            <h1>
+                <p>Vous pouvez calculer l'aire de votre triangle juste ici !</p> <br />
+            </h1>
+
+            <section id="zonecal">
+                <img src="../img/triangle.jpg" width="280" height="280" alt="Triangle" />
+
+                <h3>
+                    <p><label for="ta1">Coté 1 (en cm) : </label><input type="number" name="ta1" id="ta1" size="10" ></p>
+                    <p><label for="ta2">Coté 2 (en cm) : </label><input type="number" name="ta2" id="ta2" size="10" ></p>
+                    <p><label for="ta3">Coté 3 (en cm) : </label><input type="number" name="ta3" id="ta3" size="10" ></p>
+                    <a class="myButton" onclick="calc_aire_triangle()" >Calculez !</a>
+
+                    <p id="ta">
+
+                    </p><a href="#" class="to-top">Haut de page</a>
+                </h3>
+            </section>
+
+
+            <img class="trait" src="../img/trait.jpg" /><a id="cercl"></a>
+
+            <h1>
+                <p>Vous pouvez calculer l'aire de votre cercle juste ici !</p> <br />
+            </h1>
+
+            <section id="zonecal">
+                <img src="../img/cercle.jpg" width="280" height="280" alt="Cercle" />
+
+                <h3>
+                    <p><label for="ca1">Rayon (en cm) : </label><input type="number" name="ca1" id="ca1" size="10"
+                            required=""></p>
+                    <a class="myButton" onclick="calc_aire_cercle()">Calculez !</a>
+
+                    <p id="ca"></p>
+
+                    <a href="#" class="to-top">Haut de page</a>
+                </h3>
+            </section>
+
+
+
+            <img class="trait" src="../img/trait.jpg" /><a id="losa"></a>
+            <h1>
+                <p>Vous pouvez calculer l'aire de votre losange juste ici !</p> <br />
+            </h1>
+            <section id="zonecal">
+                <img src="../img/losange.jpg" width="280" height="280" alt="Losange" />
+
+                <h3>
+                    <p><label for="la1">Coté (en cm) : </label><input type="number" name="la1" id="la1" size="10"></p>
+                    <p><label for="la2">hauteur (en cm) : </label><input type="number" name="la2" id="la2" size="10"></p>
+                    <a class="myButton" onclick="calc_aire_losange()" class="myButton">Calculez !</a>
+
+                    <p id="la">
+
+                    </p><a href="#" class="to-top">Haut de page</a>
+                </h3>
+            </section>
+
+
+
+            <img class="trait" src="../img/trait.jpg" /><a id="rect"></a>
+            <h1>
+                <p>Vous pouvez calculer l'aire de votre triangle rectangle juste ici !</p> <br />
+            </h1>
+            <section id="zonecal">
+                <img src="../img/triangle_rect.jpg" width="280" height="280" alt="Triangle rectangle" />
+
+                <h3>
+                    <p><label for="tra1">Coté adjacent (en cm) : </label><input type="number" name="tra1" id="tra1" size="10"></p>
+                    <p><label for="tra2">Coté opposé (en cm) : </label><input type="number" name="tra2" id="tra2" size="10"></p>
+                    <a class="myButton" onclick="calc_aire_triangle_rectangle()" class="myButton">Calculez !</a>
+
+                    <p id="tra">
+
+                    </p><a href="#" class="to-top">Haut de page</a>
+                </h3>
+
+            </section>
+
+
+    </section>
+    <h4><a class="my2Button" href="../index.html">Retour accueil</a></h4>
+
+    <footer>
+            <p>©2019 AreaCalculator - Créé par <br/>  <p> 
+                </p><a>bertongnolfirigal</a></p></footer>
+  
+</body>
+<script src="../java/fonction2.js" type="text/javascript"></script>
+</html>
