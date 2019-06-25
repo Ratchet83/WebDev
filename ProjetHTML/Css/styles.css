@@ -102,7 +102,7 @@ h4 {
     left : 0;
     text-align: center;   
     display: block;
-    margin-block-start: 2.5em;
+    margin-block-start: 1.5em;
     margin-block-end: 2.5em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
@@ -186,25 +186,23 @@ h1 {
     background: transparent url('../img/cone.gif') no-repeat center 10px; /* Fond */
 }
 #fig1 {
-    background: transparent url('') no-repeat center 10px;    /* Fond */
+    background: transparent url('../img/rectangle.jpg') no-repeat center 10px;    /* Fond */
 }
 
 #fig2 {
-    background: transparent url('') no-repeat center 10px; /* Fond */
+    background: transparent url('../img/triangle.jpg') no-repeat center 10px; /* Fond */
 }
 
 #fig3 {
-    background: transparent url('') no-repeat center 10px; /* Fond */
+    background: transparent url('../img/cercle.jpg') no-repeat center 0px; /* Fond */
 }
 #fig4 {
-    background: transparent url('') no-repeat center 10px; /* Fond */
+    background: transparent url('../img/losange.jpg') no-repeat center 10px; /* Fond */
 }
 #fig5 {
-    background: transparent url('') no-repeat center 10px; /* Fond */
+    background: transparent url('../img/triangle_rect.jpg') no-repeat center 10px; /* Fond */
 }
-#fig6 {
-    background: transparent url('') no-repeat center 10px; /* Fond */
-}
+
 
 footer {
     display: flex; /* Ce conteneur est "flexible" */
@@ -406,7 +404,7 @@ footer a{
 	background-color:#f6f6f6;
 }
 .myButton:active {
-	position:relative;
+    position:relative;
 	top:1px;
 }
 
@@ -428,7 +426,7 @@ footer a{
 	border:1px solid #dcdcdc;
 	display:inline-block;
 	cursor:pointer;
-	color:#f80000;
+	color:#292828;
 	font-family:Arial;
 	font-size:28px;
 	font-weight:bold;
@@ -490,4 +488,28 @@ body {
 }
 .to-top:hover:before{
 	transform: rotate(360deg);
+}
+#menu-deroulant, #menu-deroulant ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#menu-deroulant {
+    text-align: center;
+}
+#menu-deroulant li {
+    display: inline-block;
+}
+#menu-deroulant ul li {
+    display: inherit;
+}
+
+#menu-deroulant ul {
+    position: absolute;
+    left: -999em;
+    text-align: left;
+    z-index: 1000;
+}
+#menu-deroulant li:hover ul {
+    left: auto;
 }
