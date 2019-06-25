@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+
+<html lang="fr-FR">
+    <head>
+        <title>Area Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="BERTON Thomas">
+        <meta name="description" content="Bienvenue sur notre site qui va vous simplifier la vie !">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Css/styles.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="favicon.ico">
+    </head>
+    <body>
+        <header>
+            <picture>
+                <source media="(max-width: 576px)" srcset="img/smallban.jpg">
+                <source srcset="img/baniere.jpg">
+                <img src="img/baniere.jpg" alt="Calculs et fonctions mathematiques et formes geometriques">
+                <!-- Image basée sur la création originale de ShiftGraphiX sur Pixabay : 
+                    https://pixabay.com/fr/couple-stoppie-sportive-vélomoteur-3156613/ -->
+            </picture>
+            <nav>
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul>
+                    <li><a href="pages/calcul2d.html">Calcul 2D</a></li>
+                    <li><a href="pages/calculair.html">Calcul 3D</a></li>
+                    <li><a href="pages/Questionnaire.html">Un petit cour de Géometrie ?</a></li>
+                    <li><a href="pages/Contact.html">Nous contacter</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="blabla">
+            <article>
+               
+                <p>
+                    BIENVENUE  sur notre magnifique site web ! <br/><br/>  
+                </p>
+                <p>
+                    Ici vous allez pouvoir calculer facilement et trés rapidement les dimentions de vos formes géometriques préférés !<br/> <br/> 
+                </p>
+                <p>
+                    Nous pouvons vous assurer de 5 minutes passé sur notre site Web augmente l'espérance de vie de vous et votre famille de plusieurs mois ! Cela a été scientifiquement prouvé par des chercheurs de la naza.<br/><br/>  
+                </p>
+                <p>
+                    Une question ? Un conseil ? Nos conseillers sont là pour vous aiguiller afin 
+                    de trouver la forme géometrique qui correspond à vos besoins.<br/> <br/> 
+                </p>
+                <p>
+                   Area Calculator va tres vite devenir indispensable dans votre quotidien. <br/> 
+                </p>
+                <p class="smll">
+                    Attention nous déclinons toute responsabilité en cas d'addiction a notre site web.<br/> <br/> 
+                </p>
+                           
+</section>
+   <script>    
+   var x1 = [];
+   var x2 = [];   
+   var rez = [];        
+function byTwo() {
+
+    let x1 = recupValeur("#x1");
+    let x2 = recupValeur("#x2");
+    rez = x1*x2;
+    window.document.querySelector("#test").innerHTML =
+                     "le resultat de " +x1+"*" + x2+ " est : " + rez ;
+
+}
+
+function recupValeur(id) {
+    var valeur = parseInt(window.document.querySelector(id).value);
+    if (isNaN(valeur)) {
+        window.document.querySelector(id).value = 0;
+        return 0;
+    } else {
+        return valeur;
+    }
+}
+
+
+
+</script>  
+
+
+            </article>
+        
+      
+    </body>
+    <footer>
+        <p>©2019 AreaCalculator - Créé par <br/>  <p> 
+    </p><a href="mailto:jose.gil@ac-nice.fr">Thomas Berton</a></p></footer>
+</html>

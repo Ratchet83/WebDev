@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+
+<html lang="fr-FR">
+
+<head>
+    <title>Calcul d'air</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="BERTON Thomas">
+    <meta name="description" content="Bienvenue sur notre site qui va vous simplifier la vie !">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../Css/styles.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <header>
+        <picture>
+            <source media="(max-width: 576px)" srcset="../img/smallban.jpg">
+            <source srcset="../img/baniere.jpg">
+            <img src="img/baniere.jpg" alt="Calculs et fonctions mathematiques et formes geometriques">
+        </picture>
+
+    </header>
+    <section id="blabla">
+        <article>
+
+            <h1>
+                <p> Bienvenue dans la zone de calcul à deux Dimentions !</p> <br />
+                <p> Ici vous pourrez calculer l'air ou le périmètre de vos formes géometriques.</p>
+            </h1>
+
+            <br /><br /><br />
+
+            <section id="thematique">
+                <h1> Veuillez selectionner la forme géometrique a traiter : </h1> <br /> <br />
+                <article id="fig1"><a href="#car">Carré</a></article>
+                <article id="fig2"><a href="#tri">Triangle</a></article>
+                <article id="fig3"><a href="#cercl">Cercle</a></article>
+            </section>
+            <section id="thematique">
+                <article id="fig4"><a href="#losa">Losange</a></article>
+                <article id="fig5"><a href="#rect">Triangle Rectangle</a></article>
+              
+            </section>
+
+
+
+            <section id="blabla">
+                <article>
+
+                    <p>
+                        BIENVENUE sur notre magnifique site web ! <br /><br />
+                    </p>
+                    <p>
+                        Ici vous allez pouvoir calculer facilement et trés rapidement les dimentions de vos formes
+                        géometriques préférés !<br /> <br />
+                    </p>
+                    <p>
+                        Nous pouvons vous assurer de 5 minutes passé sur notre site Web augmente l'espérance de vie de
+                        vous et votre famille de plusieurs mois ! Cela a été scientifiquement prouvé par des chercheurs
+                        de la naza.<br /><br />
+                    </p>
+                    <p>
+                        Une question ? Un conseil ? Nos conseillers sont là pour vous aiguiller afin
+                        de trouver la forme géometrique qui correspond à vos besoins.<br /> <br />
+                    </p>
+                    <p>
+                        Area Calculator va tres vite devenir indispensable dans votre quotidien. <br />
+                    </p><a id="car"></a>
+                    <p class="smll">
+                        Attention nous déclinons toute responsabilité en cas d'addiction a notre site web.<br /> <br />
+                        <br /><br />
+                    </p>
+                </article>
+            </section>
+
+            <img class="trait" src="../img/trait.jpg" />
+            <h1>
+                <p>Vous pouvez calculer l'air et le perimetre de votre Carré juste ici !</p> <br />
+            </h1>
+
+
+            <section id="zonecal">
+                <img src="../img/wcube.gif" width="280" height="280" />
+
+                <h3>
+                    <p><label for="x1">Longueur d'une arête (en cm) : </label><input type="number" name="x1" id="x1" size="10" required=""></p>
+                    <a class="myButton" onclick="calc_vol_cube()" class="myButton">Calculez !</a>
+                    <p id="calcube">
+
+
+
+
+                    </p><a href="#" class="to-top">Haut de page</a>
+                </h3>
+            </section>
+
+            <a id="tri"></a>
+            <img class="trait" src="../img/trait.jpg" />
+
+            <h1>
+                <p>Vous pouvez calculer l'air et le perimetre de votre Triangle juste ici !</p> <br />
+            </h1>
+
+            <section id="zonecal">
+                <img src="../img/pyra.gif" width="280" height="280" />
+
+                <h3>
+                    <p><label for="p1">Coté 1 (en cm) : </label><input type="number" name="p1" id="p1" size="10"
+                            required=""></p>
+                    <p><label for="p2">Coté 2 (en cm) : </label><input type="number" name="p2" id="p2" size="10"
+                            required=""></p>
+                    <a class="myButton" onclick="tg()" class="myButton">Calculez !</a>
+                    <p id="cal2"></p><a href="#" class="to-top">Haut de page</a>
+                </h3>
+            </section>
+
+
+            <img class="trait" src="../img/trait.jpg" /><a id="cercl"></a>
+
+            <h1>
+                <p>Vous pouvez calculer l'air et le perimetre de votre Cercle juste ici !</p> <br />
+            </h1>
+
+            <section id="zonecal">
+                <img src="../img/cyli.gif" width="280" height="280" />
+
+                <h3>
+                    <p><label for="p1">Coté 1 (en cm) : </label><input type="number" name="p1" id="p1" size="10"
+                            required=""></p>
+                    <p><label for="p2">Coté 2 (en cm) : </label><input type="number" name="p2" id="p2" size="10"
+                            required=""></p>
+                    <a class="myButton" onclick="byone()" class="myButton">Calculez !</a>
+                    <p id="cal3"></p><a href="#" class="to-top">Haut de page</a>
+                </h3>
+            </section>
+
+
+
+            <img class="trait" src="../img/trait.jpg" /><a id="sphere"></a>
+            <h1>
+                <p>Vous pouvez calculer l'air et le perimetre de votre ?? juste ici !</p> <br />
+            </h1>
+            <section id="zonecal">
+                <img src="../img/sphere.gif" width="280" height="280" />
+
+                <h3>
+                    <p><label for="p1">Coté 1 (en cm) : </label><input type="number" name="p1" id="p1" size="10"
+                            required=""></p>
+                    <p><label for="p2">Coté 2 (en cm) : </label><input type="number" name="p2" id="p2" size="10"
+                            required=""></p>
+                    <a class="myButton" onclick="byone()" class="myButton">Calculez !</a>
+                    <p id="cal4"></p><a href="#" class="to-top">Haut de page</a>
+                </h3>
+            </section>
+
+
+
+            <img class="trait" src="../img/trait.jpg" /><a id="rect"></a>
+            <h1>
+                <p>Vous pouvez calculer l'air et le perimetre de votre ?? juste ici !</p> <br />
+            </h1>
+            <section id="zonecal">
+                <img src="../img/rect.gif" width="280" height="280" />
+
+                <h3>
+                    <p><label for="p1">Coté 1 (en cm) : </label><input type="number" name="p1" id="p1" size="10"
+                            required=""></p>
+                    <p><label for="p2">Coté 2 (en cm) : </label><input type="number" name="p2" id="p2" size="10"
+                            required=""></p>
+                    <a class="myButton" onclick="byone()" class="myButton">Calculez !</a>
+                    <p id="cal5"></p><a href="#" class="to-top">Haut de page</a>
+                </h3>
+
+            </section>
+
+
+            <img class="trait" src="../img/trait.jpg" /><a id="cone"></a>
+            <h1>
+                <p>Vous pouvez calculer l'air et le perimetre de votre ?? juste ici !</p> <br />
+            </h1>
+            <section id="zonecal">
+                <img src="../img/cone.gif" width="280" height="280" />
+
+                <h3>
+                    <p><label for="p1">Coté 1 (en cm) : </label><input type="number" name="p1" id="p1" size="10"
+                            required=""></p>
+                    <p><label for="p2">Coté 2 (en cm) : </label><input type="number" name="p2" id="p2" size="10"
+                            required=""></p>
+                    <a class="myButton" onclick="byone()" class="myButton">Calculez !</a>
+                    <p id="cal6"></p><a href="#" class="to-top">Haut de page</a>
+                </h3>
+
+
+    </section>
+    <h4><a class="my2Button" href="../index.html">Retour à l'acceuil</a></h4>
+
+    <footer>
+        <p>©2019 AreaCalculator - Créé par <br />
+            <p>
+            </p><a href="mailto:jose.gil@ac-nice.fr">Thomas Berton</a>
+        </p>
+    </footer>
+  
+</body>
+<script src="../fonction2.js" type="text/javascript"></script>
+</html>
