@@ -17,6 +17,7 @@ body {
     width: 100%; /* La page occupe toute la largeur */
     background-image:url(../img/back.jpg);
     color : white;
+    font-size : 20px;
         }
 header {
     width: 916px; /* Les headers et sections occupent 916px (taille de la bannière) */
@@ -102,11 +103,12 @@ h4 {
     left : 0;
     text-align: center;   
     display: block;
-    margin-block-start: 2.5em;
+    margin-block-start: 5em;
     margin-block-end: 2.5em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
+
  
 }
 
@@ -428,7 +430,7 @@ footer a{
 	border:1px solid #dcdcdc;
 	display:inline-block;
 	cursor:pointer;
-	color:#f80000;
+	color:#000000;
 	font-family:Arial;
 	font-size:28px;
 	font-weight:bold;
